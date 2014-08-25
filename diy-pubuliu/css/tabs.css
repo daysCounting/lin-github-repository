@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-size: 12px;
+
+}
+.screen{
+	width:328px;
+	height:100px;
+	margin: 10px auto;
+	border: 1px solid #eee;
+	overflow: hidden;
+	box-shadow:1px,2px,3px,2px #000;
+
+}
+.title{
+	height:30px;
+	position: relative;
+	background: #f7f7f7;
+}
+.title ul{
+	position: absolute;
+}
+.title ul li {
+	
+	height:30px;
+	float:left;
+	width:80px;	
+	text-align: center ;
+	line-height: 30px;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.title li a:link,.title li a:visited{
+	text-decoration:none;
+	color:#000;
+}
+.title ul li a:hover{
+     color:orange;
+}
+.title li.select{
+	background:#fff;
+	border-bottom-color:#fff;
+	border-left:1px solid #eee;
+}
