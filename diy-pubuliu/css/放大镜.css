@@ -1,0 +1,12 @@
+.numOne{
+	margin:50px;
+}
+.numTwo img{
+	/*display: none;*/
+}
+.numTwo {
+	display: none;
+	overflow: hidden;
+	width:300px;
+	height:187.5px;
+}
