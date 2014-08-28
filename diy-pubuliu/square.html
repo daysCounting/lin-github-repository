@@ -1,0 +1,86 @@
+<!DOCTYPE html   >
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>正方体</title>
+</head>
+<style type="text/css">
+	html, body, div, span,h1, h2, h3, h4, h5, h6, p,a, img, ol, ul, li{
+    margin:0;padding:0;border:0;outline:0;
+}
+body{
+    font-family:Verdana,Arial;
+    height:700px;
+    background:#000;
+}
+@-webkit-keyframes square_turn{
+    0%{-webkit-transform:rotateX(0deg) rotateY(0deg) translateZ(100px);}
+    100%{-webkit-transform:rotateX(-360deg) rotateY(-360deg)  translateZ(100px);}
+}
+.frame{
+    margin:200px auto;
+    width:200px;
+    height:200px;
+    -webkit-transform-style:preserve-3d;
+    -webkit-transform:perspective(800px);
+}
+.square{
+    position:relative;
+    width:200px;
+    height:200px;
+    -webkit-transform-style:preserve-3d;
+    -webkit-animation:square_turn 8s linear infinite;
+}
+.square div{
+    position:absolute;
+    width:200px;
+    height:200px;
+    font-size:100px;
+    line-height:200px;
+    text-align:center;
+    border:1px solid #FFF;
+    border-radius:10px;
+    background:rgba(255,255,255,0.5);
+    box-shadow:-1px 1px 2px rgba(50,50,50,0.1);
+}
+.square div:nth-of-type(2){
+    -webkit-transform:rotateY(90deg);
+    -webkit-transform-origin:left;
+}
+.square div:nth-of-type(3){
+    -webkit-transform:rotateY(-90deg);
+    -webkit-transform-origin:right;
+}
+.square div:nth-of-type(4){
+    -webkit-transform:rotateX(-90deg);
+    -webkit-transform-origin:top;
+}
+.square div:nth-of-type(5){
+    -webkit-transform:rotateX(90deg);
+    -webkit-transform-origin:bottom;
+}
+.square div:nth-of-type(6){
+    -webkit-transform:translateZ(-200px);
+}
+.square img{
+    width:200px;
+    height:200px;
+}
+.square img:hover{
+    opacity: 0.9;
+    -webkit-transform:scale(1.1);
+}
+</style>
+<body>
+<div class="frame">
+    <div class="square">
+        <div><img src="images/1.jpg" alt=""></div>
+        <div><img src="images/2.jpg" alt=""></div>
+        <div><img src="images/3.jpg" alt=""></div>
+        <div><img src="images/4.jpg" alt=""></div>
+        <div><img src="images/5.jpg" alt=""></div>
+        <div><img src="images/6.jpg" alt=""></div>
+    </div>
+</div>
+</body>
+</html>
