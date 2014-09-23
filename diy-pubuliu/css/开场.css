@@ -6,7 +6,11 @@ body{background: black;
 	border: 1px solid white;
 	width:0px;
 	margin:450 -10px;
+<<<<<<< HEAD
 	background-color: white;
+=======
+	background-color: gray;
+>>>>>>> origin/master
 }
 	html, body, div, span,h1, h2, h3, h4, h5, h6, p,a, img, ol, ul, li{
     margin:0;padding:0;border:0;outline:0;

@@ -4,14 +4,23 @@ $(function() {
 	var t = $("#hh");
 	t.animate({
 		width: "1920px"
+<<<<<<< HEAD
 	}, 1000);
+=======
+	}, 2000);
+>>>>>>> origin/master
 	t.animate({
 		height: "950px",
 		marginTop: "0px",
 		marginBottom: "-300px",
 		opacity: '0.2'
+<<<<<<< HEAD
 	}, 800, function() {
 		t.fadeOut();
+=======
+	}, 500, function() {
+		t.remove();
+>>>>>>> origin/master
 		$(".frame").show();
 	})
 });
